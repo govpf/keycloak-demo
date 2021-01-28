@@ -1,0 +1,5 @@
+{
+  "realm" : "developer",
+  "auth-server-url" : "http://localhost/auth",
+  "resource" : "js-console"
+}

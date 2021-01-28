@@ -1,0 +1,43 @@
+
+dn: ou=Groups,dc=demo,dc=tst
+changetype: add
+objectclass: organizationalUnit
+ou: Groups
+
+dn: ou=Users,dc=demo,dc=tst
+changetype: add
+objectclass: organizationalUnit
+ou: Users
+
+dn: cn=user1,ou=Users,dc=demo,dc=tst
+changetype: add
+objectclass: inetOrgPerson
+cn: user1
+givenname: user1
+sn: user1
+displayname: user1 User
+mail: user1@gmail.com
+userpassword: user1
+
+dn: cn=user2,ou=Users,dc=demo,dc=tst
+changetype: add
+objectclass: inetOrgPerson
+cn: user2
+givenname: user2
+sn: user2
+displayname: user2 User
+mail: user2@gmail.com
+userpassword: user2
+
+dn: cn=Admins,ou=Groups,dc=demo,dc=tst
+changetype: add
+cn: Admins
+objectclass: groupOfUniqueNames
+uniqueMember: cn=admin,dc=demo,dc=tst
+
+dn: cn=Maintaners,ou=Groups,dc=demo,dc=tst
+changetype: add
+cn: Maintaners
+objectclass: groupOfUniqueNames
+uniqueMember: cn=user1,ou=Users,dc=demo,dc=tst
+uniqueMember: cn=user2,ou=Users,dc=demo,dc=tst
