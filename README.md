@@ -16,7 +16,8 @@ Il suffit de cloner le repository, de lancer la stack avec la commande suivante 
 ```
 git clone https://github.com/govpf/keycloak-demo
 cd keycloak-demo
-docker-compose up
+docker-compose build
+docker-compose up -d
 ```
 
 ## Configuration des liens d'accès aux différentes briques applicatives
