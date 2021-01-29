@@ -1,3 +1,5 @@
+## Objectif
+
 Ce  projet constitue une plateforme de développement, de test ou simplement une démo pour une présentation, avec les services suivants :
 
 * un serveur keycloak
@@ -7,7 +9,17 @@ Ce  projet constitue une plateforme de développement, de test ou simplement une
 * une application de démonstration
 * un reverse proxy dynamique (traefik)
 
-## Configuration de la plateforme
+## Utilisation
+
+Il suffit de cloner le repository, de lancer la stack avec la commande suivante et de configurer son fichier hosts.
+
+```
+git clone https://github.com/govpf/keycloak-demo
+cd keycloak-demo
+docker-compose up
+```
+
+## Configuration des liens d'accès aux différentes briques applicatives
 
 Dans votre fichier hosts, il faut rajouter les éléments suivants :
 
@@ -18,7 +30,7 @@ $ sudo cat /etc/hosts
 
 ## Liste des points d'accès disponible
 
-| Libellé | Endpoint | Compte d'accès |
+| Description | Endpoint | Compte d'accès |
 | - | - | - |
 | Gestionnaire d'identité | http://localhost | admin / password |
 | Messagerie | http://mail.tst | N/A |
