@@ -39,3 +39,11 @@ $ sudo cat /etc/hosts
 | Monitoring proxy | http://localhost:8080 | N/A |
 | Visualisation base de donnée | http://database.tst | admin / password |
 | Annuaire | ldap://ldap_server | cn=admin,dc=demo,dc=tst / password |
+
+## Configuration de la fédération d'utilisateur
+
+![User federation](screenshot/ldap_config.jpg)
+
+## Configuration de la messagerie
+
+![Mail configuration](screenshot/mail_config.jpg)
