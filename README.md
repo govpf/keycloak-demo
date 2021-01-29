@@ -26,7 +26,7 @@ Dans votre fichier hosts, il faut rajouter les éléments suivants :
 
 ```
 $ sudo cat /etc/hosts
-127.0.0.1   maildev.tst demo.tst database.tst
+127.0.0.1   mail.tst demo.tst database.tst
 ```
 
 ## Liste des points d'accès disponible
