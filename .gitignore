@@ -1,2 +1,4 @@
 volumes
 data/database/postgres
+data/ldap/config/*
+data/ldap/data/*
