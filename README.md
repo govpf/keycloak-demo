@@ -20,9 +20,9 @@ $ sudo cat /etc/hosts
 
 | Libellé | Endpoint | Compte d'accès |
 | - | - | - |
-| Gestionnaire d'identité | http://localhost | admin / password        |
-| Messagerie | http://mail.tst | N/A                     |
-| Application de démonstration | http://demo.tst | N/A                     |
-| Monitoring proxy | http://localhost:8000 | N/A                     |
-| Visualisation base de donnée | http://database.tst | admin / password        |
-| Annuaire | ldap://ldap_server | cn=admin,dc=demo,dc=tst |
+| Gestionnaire d'identité | http://localhost | admin / password |
+| Messagerie | http://mail.tst | N/A |
+| Application de démonstration | http://demo.tst | N/A |
+| Monitoring proxy | http://localhost:8000 | N/A |
+| Visualisation base de donnée | http://database.tst | admin / password |
+| Annuaire | ldap://ldap_server | cn=admin,dc=demo,dc=tst / password |
