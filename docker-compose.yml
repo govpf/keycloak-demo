@@ -27,6 +27,19 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./conf/traefik.toml:/traefik.toml
 
+  pgweb:
+    image: sosedoff/pgweb
+    restart: 'always'
+    environment:
+      - DATABASE_URL=postgres://keycloak:password@postgres:5432/keycloak?sslmode=disable
+    depends_on:
+      - postgres
+    labels:
+      traefik.enable: true
+      traefik.http.services.pgweb.loadbalancer.server.port: 8081
+      traefik.http.routers.pgweb.rule: Host(`database.tst`)
+      traefik.http.routers.pgweb.entryPoints: insecure
+
   keycloak:
     image: jboss/keycloak
     environment:
@@ -57,12 +70,12 @@ services:
       traefik.http.routers.demo.rule: Host(`demo.tst`)
       traefik.http.routers.demo.entryPoints: insecure
 
-  maildev:
+  mail:
     image: maildev/maildev
     labels:
       traefik.enable: true
       traefik.http.services.maildev.loadbalancer.server.port: 80
-      traefik.http.routers.maildev.rule: Host(`maildev.tst`)
+      traefik.http.routers.maildev.rule: Host(`mail.tst`)
       traefik.http.routers.maildev.entryPoints: insecure
   
   ldap_server:
