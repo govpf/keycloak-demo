@@ -16,7 +16,7 @@ cn: user1
 givenname: user1
 sn: user1
 displayname: user1 User
-mail: user1@localhost
+mail: user1@demo.tst
 userpassword: user1
 
 dn: cn=user2,ou=Users,dc=demo,dc=tst
@@ -26,7 +26,7 @@ cn: user2
 givenname: user2
 sn: user2
 displayname: user2 User
-mail: user2@localhost
+mail: user2@demo.tst
 userpassword: user2
 
 dn: cn=Admins,ou=Groups,dc=demo,dc=tst
