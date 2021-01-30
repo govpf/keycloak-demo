@@ -40,6 +40,13 @@ $ sudo cat /etc/hosts
 | Visualisation base de donnée | http://database.tst | admin / password |
 | Annuaire | ldap://ldap_server | cn=admin,dc=demo,dc=tst / password |
 
+## Comptes utilisateurs de l'annuaire LDAP
+
+| Compte | Mot de passe |
+| - | - |
+| user1 | user1 |
+| user2 | user2 |
+
 ## Configuration de la fédération d'utilisateur
 
 ![User federation](screenshot/ldap_config.jpg)
