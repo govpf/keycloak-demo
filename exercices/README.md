@@ -6,7 +6,7 @@ Ces exercices sont plus orienté pratique que théorique et ont une difficulté 
 
 ## Liste des exercices
 
-| Numéro | Titre | Niveau de difficulté |
+| Numéro | Titre | Etoitle gagné ! |
 | - | - | - |
 | 1 | Démarrer la plateforme | :star: |
 | 2 | Se connecter sur les différents outils | :star: |
