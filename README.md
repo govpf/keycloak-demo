@@ -1,6 +1,6 @@
 ## Objectif
 
-Ce  projet constitue une plateforme de développement, de test ou simplement une démo pour une présentation, avec les services suivants :
+Ce  projet constitue une plateforme de développement, de test ou simplement une démo pour une présentation, dans laquelle les services suivant sont disponible :
 
 * un serveur keycloak
 * un serveur de base de donnée postgresql
@@ -8,6 +8,12 @@ Ce  projet constitue une plateforme de développement, de test ou simplement une
 * un serveur de messagerie
 * une application de démonstration
 * un reverse proxy dynamique (traefik)
+
+Il y a un certains nombres de pré-requis pour utiliser cette plateforme. Il est nécessaire d'avoir pré-installer :
+
+* le docker engine ainsi que docker-compose
+* Make
+* un navigateur web
 
 ## Utilisation
 
