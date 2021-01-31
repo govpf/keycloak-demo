@@ -22,8 +22,7 @@ Il suffit de cloner le repository, de lancer la stack avec la commande suivante 
 ```
 git clone https://github.com/govpf/keycloak-demo
 cd keycloak-demo
-docker-compose build
-docker-compose up -d
+make all
 ```
 
 ## Configuration des liens d'accès aux différentes briques applicatives
@@ -34,6 +33,8 @@ Dans votre fichier hosts, il faut rajouter les éléments suivants :
 $ sudo cat /etc/hosts
 127.0.0.1   mail.tst demo.tst database.tst
 ```
+
+Note : sous windows, le fichier host se trouve dans le répertoire C:\Windows\System32\drivers\etc.
 
 ## Liste des points d'accès disponible
 
