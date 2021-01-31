@@ -48,10 +48,13 @@ $ sudo cat /etc/hosts
 
 ## Comptes utilisateurs de l'annuaire LDAP
 
-| Compte | Mot de passe |
-| - | - |
-| user1 | user1 |
-| user2 | user2 |
+| Compte | Mot de passe | Groupes |
+| - | - | - |
+| admin | password | users / admins |
+| user1 | user1 | users / developers |
+| user2 | user2 | users / developers |
+| user3 | user3 | users |
+| user4 | user4 | users |
 
 ## Configuration de la fédération d'utilisateur
 
