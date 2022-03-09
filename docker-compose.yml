@@ -41,7 +41,7 @@ services:
       traefik.http.routers.pgweb.entryPoints: insecure
 
   keycloak:
-    image: jboss/keycloak
+    image: jboss/keycloak:15.1.0
     environment:
       DB_VENDOR: postgres
       DB_ADDR: postgres
